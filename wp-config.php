@@ -22,7 +22,7 @@ define('DB_NAME', 'ndeportiva');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'H1dr0g3n0');
+define('DB_PASSWORD', 'N1tr0g3n0');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -32,6 +32,9 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+define('CONCATENATE_SCRIPTS', false );
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
