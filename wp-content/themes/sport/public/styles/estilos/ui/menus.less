@@ -1,0 +1,74 @@
+/* Top menú */
+
+#mainmen {
+	background-color:white;
+	height:65px;
+	.box-shadow(none);
+}
+
+
+/* Logo */
+
+.topper img.tllogo {
+	width: 120px;
+	margin-top: 7px;
+}
+
+.logoresponsive {
+	background-image:none;
+	background-color:white;
+	text-align:left;
+	padding:13px 21px;
+	img {
+		width:95px;
+	}
+}
+
+/* Top-left-menu */
+
+#left-menu {
+	margin-left: 227px;
+	margin-top: 5px;
+	display:inline-block;
+	ul {
+		li {
+			list-style: none;
+			float:left;
+			a {
+				text-transform: uppercase;
+				font-family: klavika;
+				font-size: 14px;
+				color: #606060;
+				margin-right:20px;
+			}
+		}
+	}
+	.selectnav {
+		position: absolute;
+		top: -73px;
+		right: 16px;
+		width: 94px;
+	}
+}
+
+
+#access {
+	margin-top:13px;
+	@media(max-width:@screen-xs-max-width){
+		display:none;
+	}
+	> div {
+		float:left;
+	}
+	.sociallinks {
+		li {
+			.border-radius(3px);
+			a {
+				padding-left:2px;
+			}
+			&#twitter {
+				background-color:@azul-claro;
+			}
+		}
+	}
+}

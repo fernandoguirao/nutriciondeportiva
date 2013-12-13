@@ -113,20 +113,32 @@ wp_head();
 		<div id="bottom-banner">
 			<div class="row">
 				<div class="cuatro column">
-					<div class="icono">
+					<div class="icono iuno">
 					</div>
 					<h4>
-						Nutrición y salud
+						Servicios
 					</h4>
 				</div>
 				<div class="cuatro column">
-					dddd
+					<div class="icono idos">
+					</div>
+					<h4>
+						Nutrición<span> y salud</span>
+					</h4>
 				</div>
 				<div class="cuatro column">
-					dddd
+					<div class="icono itres">
+					</div>
+					<h4>
+						Nutrición<span> y deporte</span>
+					</h4>
 				</div>
 				<div class="cuatro column">
-					dddd
+					<div class="icono icuatro">
+					</div>
+					<h4>
+						Noticias
+					</h4>
 				</div>
 			</div>
 		</div>
