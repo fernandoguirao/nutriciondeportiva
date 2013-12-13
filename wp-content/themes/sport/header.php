@@ -112,34 +112,35 @@ wp_head();
 		</div>
 		<div id="bottom-banner">
 			<div class="row">
-				<div class="cuatro column">
+				<a class="cuatro column" href="">
 					<div class="icono iuno">
 					</div>
 					<h4>
 						Servicios
 					</h4>
-				</div>
-				<div class="cuatro column">
+					<!-- <img class="fondo" src="http://localhost:8888/wp-content/uploads/2013/08/buildm2-400x270.jpg" alt=""> -->
+				</a>
+				<a class="cuatro column" href="">
 					<div class="icono idos">
 					</div>
 					<h4>
 						Nutrición<span> y salud</span>
 					</h4>
-				</div>
-				<div class="cuatro column">
+				</a>
+				<a class="cuatro column" href="">
 					<div class="icono itres">
 					</div>
 					<h4>
 						Nutrición<span> y deporte</span>
 					</h4>
-				</div>
-				<div class="cuatro column">
+				</a>
+				<a class="cuatro column" href="">
 					<div class="icono icuatro">
 					</div>
 					<h4>
 						Noticias
 					</h4>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>

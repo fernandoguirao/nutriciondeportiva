@@ -9,7 +9,12 @@
 	font-size: 13px!important;
 	font-family: klavika!important;
 	text-transform:uppercase;
-
+	.transition(background-color,.2s);
+	.transition(border-radius,.2s);
+	&:hover {
+		.border-radius(20px);
+		background-color:@azul-claro;
+	}
 	&.btn-small {
 		
 	}
@@ -21,6 +26,9 @@
 	}
 	&.btn-azul-claro {
 		background-color:@azul-claro;
+		&:hover {
+			background-color:@azul;
+		}
 	}
 	
 }

@@ -69,12 +69,6 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 			</div>
 
 			<div class="six columns">
-				<div id="site-generator">
-					<a href="<?php echo esc_url( __('http://www.cro.ma', 'localize') ); ?>" 
-						title="<?php esc_attr_e('Croma', 'localize'); ?>" rel="generator">
-						<?php printf( __('Proudly Designed by %s', 'localize'), '<span>Croma</span>' ); ?>
-					</a>
-				</div>			
 			</div>
 		</div>
 	</div>

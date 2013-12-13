@@ -36,18 +36,51 @@
 			font-weight: normal;
 			font-size: 16px;
 			margin-top:19px;
+			position: relative;
+			z-index:2;
 			span {
 				font-family:klavika;
 			}
 		}
 		.cuatro {
 			text-align:center;
+			padding-top:36px;
+			margin-top:-36px;
+			.border-radius(5px);
+			overflow:hidden;
+			background-color:rgba(0,0,0,0);
+			.transition(background-color,.15s);
+
+			/*
+.fondo {
+				width:100%;
+				height:100%;
+				
+				position:absolute;
+				top:0;
+				left:0;
+				.opacity(0);
+				.transition(opacity,.15s);
+				
+			}
+*/
+			&:hover {
+				background-color:rgba(red(darken(@amarillo,20%)),green(darken(@amarillo,20%)),blue(darken(@amarillo,20%)),.3);
+				/*
+.fondo {
+					.opacity(.4);
+					
+				}
+*/
+			}
 		}
 		.icono {
 			background-image:url('@{url}images/iconos.png');
 			height:58px;
 			width:97.5px;
 			display:inline-block;
+			position: relative;
+			z-index:2;
 			&.iuno {
 				width:58.5px;
 			}

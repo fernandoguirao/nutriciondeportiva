@@ -40,6 +40,17 @@
 				font-size: 14px;
 				color: #606060;
 				margin-right:20px;
+				.transition(color,.2s);
+				&:hover {
+					color:@azul;
+/*
+					border-bottom:1px dotted rgba(red(@azul),green(@azul),blue(@azul),.3);
+					border-top:1px dotted rgba(red(@azul),green(@azul),blue(@azul),.3);
+*/
+					padding-bottom:5px;
+					padding-top:5px;
+					margin-top:-5px;
+				}
 			}
 		}
 	}
@@ -63,11 +74,24 @@
 	.sociallinks {
 		li {
 			.border-radius(3px);
+			.transition(border-radius,.2s);
+			overflow:hidden;
+			background-color:@azul;
+			&:hover {
+				.border-radius(20px);
+				background-color:@azul;
+			}
 			a {
 				padding-left:2px;
 			}
 			&#twitter {
 				background-color:@azul-claro;
+				a {
+					background-color:@azul-claro;
+				}
+				&:hover {
+					background-color:@azul-claro;
+				}
 			}
 		}
 	}
