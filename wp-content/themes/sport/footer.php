@@ -63,12 +63,17 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 			<div class="six columns">
 				<div id="site-info">
 					<a href="<?php echo home_url( '/' ) ?>" class="whites" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?> &copy; (<?php echo date('Y'); ?>)
+						© Servicio de Nutrición Deportiva UMH, 2014 
 					</a>
-				</div>					
+					<a href=""> | </a>
+					<a href="">
+						Política de privacidad
+					</a>
+				</div>
 			</div>
 
 			<div class="six columns">
+
 			</div>
 		</div>
 	</div>

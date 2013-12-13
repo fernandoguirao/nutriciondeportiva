@@ -475,7 +475,7 @@ function get_feedbackcontent($type){
 	if (!empty($str)){
 
 	return '
-	<div class="fitfeedbackouter clearfix">
+	<div class="fitfeedbackouter img clearfix">
 		<div class="row">
 			<div class="twelve columns">
 				<div class="feedbackcontent">

@@ -47,7 +47,7 @@ class tli_newsletter extends WP_Widget {
 					<div class="valsuccess">' .  __('Thank you for submitting. Your first newsletter will follow shortly.' , 'localize')   . '</div>
 					<div class="valerror">' .  __('there is an error in your submission. Please review your details and resend' , 'localize')   . '</div>
 				</div>
-			<input class="newssubmit smallfont" type="submit" value="' . $label  . '">
+			<input class="newssubmit smallfont btn" type="submit" value="' . $label  . '">
 		</form>';
 
 		

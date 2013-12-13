@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sport v1.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-12-13 19:07:33+0000\n"
+"PO-Revision-Date: 2013-12-13 21:10:11+0000\n"
 "Last-Translator: root <fernando@bueninvento.es>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -336,7 +336,7 @@ msgstr ""
 #: inc/framework/ajax.php:87
 #@ localize
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: inc/framework/ajax.php:60
 #: inc/framework/ajax.php:88
@@ -1047,20 +1047,20 @@ msgstr ""
 #: inc/widgets/contacts.php:41
 #@ localize
 msgid "Operating hours:"
-msgstr ""
+msgstr "Horario:"
 
 #: inc/shortcodes/shortcode-contact.php:58
 #: inc/widgets/contacts.php:48
 #@ localize
 msgid "Address:"
-msgstr ""
+msgstr "Dirección:"
 
 #: inc/shortcodes/shortcode-contact.php:65
 #: inc/shortcodes/shortcode-contact.php:247
 #: inc/widgets/contacts.php:55
 #@ localize
 msgid "Telephone:"
-msgstr ""
+msgstr "Teléfono:"
 
 #: inc/shortcodes/shortcode-contact.php:72
 #: inc/widgets/contacts.php:62
@@ -1080,7 +1080,7 @@ msgstr ""
 #: inc/widgets/newsletter.php:37
 #@ localize
 msgid "Name:"
-msgstr ""
+msgstr "Nombre:"
 
 #: inc/shortcodes/shortcode-contact.php:257
 #@ localize
