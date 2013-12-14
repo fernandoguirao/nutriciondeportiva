@@ -8,6 +8,11 @@
 		text-transform: uppercase;
 		font-size:38px;
 		margin-top:5px;
+		@media(max-width:@screen-xs-max-width){
+			font-size: 23px;
+			margin-top: 5px;
+			padding: 10px 27px;
+		}
 		span {
 			font-family:klavikabold;
 		}
@@ -21,6 +26,10 @@
 			display:inline-block;
 			a {
 				width:140px;
+				@media(max-width: @screen-xs-max-width){
+					width: 131px;
+					margin: 0 6px;
+				}
 			}
 		}
 	}
@@ -29,6 +38,9 @@
 		width:100%;
 		height:190px;
 		padding:46px 0;
+		@media(max-width: @screen-xs-max-width){
+			display:none!important;
+		}
 		h4 {
 			color:@azul;
 			text-transform: uppercase;
@@ -50,6 +62,19 @@
 			overflow:hidden;
 			background-color:rgba(0,0,0,0);
 			.transition(background-color,.15s);
+			@media(max-width: @screen-xs-max-width){
+				display:inline-block;
+				width: 49% !important;
+				vertical-align: top;
+				padding:24px;
+				h4 {
+					font-size:14px;
+					margin:0;
+				}
+				.icono {
+					display:none!important;
+				}
+			}
 
 			/*
 .fondo {
@@ -103,3 +128,4 @@
 .cuatro {
 	width:25%;
 }
+
