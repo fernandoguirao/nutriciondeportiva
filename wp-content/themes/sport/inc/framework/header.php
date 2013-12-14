@@ -68,7 +68,6 @@ function croma_fetch_headerstuff() {
 	$pdbot 		= (isset($tlset['cro_paddingbottom']) && $tlset['cro_paddingbottom'] != 0)? $tlset['cro_paddingbottom'] . 'px' : 0;
 
 	?>
-
 	<style type="text/css">
 
 	.cro_formquote, .cromacol11 .mejs-container, .widget_tli-newsletter .newssubmit, ul.calhead,

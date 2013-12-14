@@ -99,3 +99,35 @@
 		}
 	}
 }
+
+#adaptative {
+	position: absolute;
+	right:20px;
+	top:27px;
+	span {
+		font-family:klavikabold;
+		text-transform: uppercase;
+		font-size:16px;
+		color:lighten(@gris,20%)!important;
+		cursor:pointer;
+		&:hover {
+			color:darken(@gris,10%)!important;
+		}
+	}
+	.dropdown {
+		li a {
+			font-family:montserrat;
+		}
+		left: inherit!important;
+		top: 32px!important;
+		right: -15px!important;
+		&.dropdown-tip:before {
+			left:inherit!important;
+			right:29px!important;
+		}
+		&.dropdown-tip:after {
+			left:inherit!important;
+			right:30px!important;
+		}
+	}
+}

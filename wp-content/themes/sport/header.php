@@ -40,7 +40,10 @@ wp_head();
 ?>
 
 
-
+<link type="text/css" rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/public/plugins/jquery.dropdown.css" />
+<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/public/plugins/jquery.dropdown.js"></script>
+<script type="text/javascript" src="//use.typekit.net/mms7zhr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 
@@ -62,6 +65,23 @@ wp_head();
 				echo '&nbsp;';
 			}
 		?>
+					<div id="adaptative" class="visible-phone">
+						<span data-dropdown="#dropdown-1">
+							Menú
+						</span>
+						<div id="dropdown-1" class="dropdown dropdown-tip">
+						    <ul class="dropdown-menu">
+						        <li><a href="#1">Quiénes somos</a></li>
+						        <li><a href="#2">Enlaces</a></li>
+						        <li><a href="#3">Contacto</a></li>
+						        <li class="dropdown-divider"></li>
+						        <li><a href="#4">Servicios</a></li>
+						        <li><a href="#5">Nutrición y salud</a></li>
+						        <li><a href="#5">Nutrición y deporte</a></li>
+						        <li><a href="#5">Noticias</a></li>
+						    </ul>
+						</div>
+					</div>
 	</div>
 	<div class="mbod">
 		<div class="topper">
@@ -86,12 +106,13 @@ wp_head();
 					<div id="access">	
 						<?php if ( dynamic_sidebar('top_menu_connect') ) : else : endif; ?>
 						<?php echo ntfetch_social(); ?>	
-					</div>	
+					</div>
 				</div>
 			</div>
 			<div class="row">
 		</div>
 	</div>
+	<?php if( is_home() || is_front_page() ) { ?>
 	<div id="banner-brand" class="img" style="background-image:url('<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/cienciaydeporte.png');">
 		<div id="top-banner">
 			<div id="marcas" class="row">
@@ -144,3 +165,4 @@ wp_head();
 			</div>
 		</div>
 	</div>
+	<?php } ?>
