@@ -73,14 +73,14 @@ wp_head();
 						</span>
 						<div id="dropdown-1" class="dropdown dropdown-tip">
 						    <ul class="dropdown-menu">
-						        <li><a href="#1">Quiénes somos</a></li>
-						        <li><a href="#2">Enlaces</a></li>
-						        <li><a href="#3">Contacto</a></li>
+						        <li><a href="/quienes-somos">Quiénes somos</a></li>
+						        <li><a href="/enlaces">Enlaces</a></li>
+						        <li><a href="/contact">Contacto</a></li>
 						        <li class="dropdown-divider"></li>
-						        <li><a href="#4">Servicios</a></li>
-						        <li><a href="#5">Nutrición y salud</a></li>
-						        <li><a href="#5">Nutrición y deporte</a></li>
-						        <li><a href="#5">Noticias</a></li>
+						        <li><a href="/servicios">Servicios</a></li>
+						        <li><a href="/nutricion-y-salud">Nutrición y salud</a></li>
+						        <li><a href="/nutricion-y-deporte">Nutrición y deporte</a></li>
+						        <li><a href="/news">Noticias</a></li>
 						    </ul>
 						</div>
 					</div>
@@ -114,7 +114,7 @@ wp_head();
 			<div class="row">
 		</div>
 	</div>
-	<?php if( is_home() || is_front_page() ) { ?>
+	<?php if( is_home() || is_front_page() || is_page('Noticias') ) { ?>
 	<div id="banner-brand" class="img" style="background-image:url('<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/cienciaydeporte.png');">
 		<div id="top-banner">
 			<div id="marcas" class="row">
@@ -135,7 +135,7 @@ wp_head();
 		</div>
 		<div id="bottom-banner">
 			<div class="row">
-				<a class="cuatro column" href="">
+				<a class="cuatro column" href="/servicios">
 					<div class="icono iuno">
 					</div>
 					<h4>
@@ -143,21 +143,21 @@ wp_head();
 					</h4>
 					<!-- <img class="fondo" src="http://localhost:8888/wp-content/uploads/2013/08/buildm2-400x270.jpg" alt=""> -->
 				</a>
-				<a class="cuatro column" href="">
+				<a class="cuatro column" href="/nutricion-y-salud">
 					<div class="icono idos">
 					</div>
 					<h4>
 						Nutrición<span> y salud</span>
 					</h4>
 				</a>
-				<a class="cuatro column" href="">
+				<a class="cuatro column" href="/nutricion-y-deporte">
 					<div class="icono itres">
 					</div>
 					<h4>
 						Nutrición<span> y deporte</span>
 					</h4>
 				</a>
-				<a class="cuatro column" href="">
+				<a class="cuatro column" href="/news">
 					<div class="icono icuatro">
 					</div>
 					<h4>

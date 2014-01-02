@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sport v1.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-12-13 21:10:11+0000\n"
+"PO-Revision-Date: 2014-01-02 11:34:27+0000\n"
 "Last-Translator: root <fernando@bueninvento.es>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -252,7 +252,7 @@ msgstr ""
 #: public/framework/images.php:230
 #@ localize
 msgid "More Info"
-msgstr ""
+msgstr "Más información"
 
 #: inc/classes/class-cromatheme-timetable.php:148
 #: inc/classes/class-cromatheme-timetable.php:176
@@ -1041,7 +1041,7 @@ msgstr ""
 #: inc/shortcodes/shortcode-team.php:70
 #@ localize
 msgid "More info"
-msgstr ""
+msgstr "Más información"
 
 #: inc/shortcodes/shortcode-contact.php:51
 #: inc/widgets/contacts.php:41
@@ -3184,30 +3184,30 @@ msgstr ""
 #: public/tparts/content.php:49
 #@ localize
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
 
 #: public/tparts/content-audio.php:60
 #: public/tparts/content.php:55
 #@ localize
 msgid "Leave a reply"
-msgstr ""
+msgstr "Deja un comentario"
 
 #: public/tparts/content-audio.php:60
 #: public/tparts/content.php:55
 #@ localize
 msgid "1 Reply"
-msgstr ""
+msgstr "1 respuesta"
 
 #: public/tparts/content-audio.php:60
 #: public/tparts/content.php:55
 #@ localize
 msgid "% Replies"
-msgstr ""
+msgstr "% comentarios"
 
 #: public/tparts/content-video.php:45
 #@ localize
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "Leer más <span class=\"meta-nav\">&rarr;</span>"
 
 #: single-activities.php:58
 #: single-activities.php:126

@@ -771,6 +771,9 @@ jQuery(document).ready(function($) {
   	$('#ctcform #cro_form_cmmt').prev().text('Tu mensaje:');
   	/* $('.ctcclearside .cro_accent').text('Detalles de contacto'); */
   }
+  if ($('.blog').length > 0) {
+    $('.tagspan span').text('Etiquetas: ')
+  }
 });
 
 
