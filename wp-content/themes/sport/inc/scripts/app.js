@@ -763,6 +763,14 @@ jQuery(document).ready(function($) {
 	/* ========================= BOOKINGS ======================== */
 	$('form#ctcform').cromaform();
 	
+	/* PERSONALIZADO */
+	
+	/* SI ESTAMOS EN CONTACTO */
+	if ($('#ctcform').length > 0) {
+  	/* $('#ctcform .cro_accent').text('Escríbenos un mensaje'); */
+  	$('#ctcform #cro_form_cmmt').prev().text('Tu mensaje:');
+  	/* $('.ctcclearside .cro_accent').text('Detalles de contacto'); */
+  }
 });
 
 

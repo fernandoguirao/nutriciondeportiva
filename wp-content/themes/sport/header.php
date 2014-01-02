@@ -42,8 +42,10 @@ wp_head();
 
 <link type="text/css" rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/public/plugins/jquery.dropdown.css" />
 <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/public/plugins/jquery.dropdown.js"></script>
+<!--
 <script type="text/javascript" src="//use.typekit.net/mms7zhr.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
 </head>
 
 
