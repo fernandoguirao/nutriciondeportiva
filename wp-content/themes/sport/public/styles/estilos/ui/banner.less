@@ -2,6 +2,7 @@
 	margin-top:-18px;
 	text-align:center;
 	h1 {
+		display:none;
 		color:white;
 		font-weight:normal;
 		font-family:klavikalight;
@@ -22,10 +23,26 @@
 		width:100%;
 		height:260px;
 		padding:53px 0;
+		overflow:hidden;
 		#marcas {
 			display:inline-block;
 			a {
-				width:140px;
+				width: 400px;
+				position: relative;
+				top: 8px;
+				&.float-left {
+					float:none;
+					text-align:center;
+					display: inline-block;
+					.transition(margin-top,.4s);
+					&.entrada {
+						margin-top:200px;
+					}
+				}
+				&.float-right {
+					width: 151px;
+					margin-top: 86px;
+				}
 				@media(max-width: @screen-xs-max-width){
 					width: 131px;
 					margin: 0 6px;

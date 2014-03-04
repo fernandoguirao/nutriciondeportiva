@@ -9,12 +9,25 @@
 	}
 }
 
+.mbod {
+	@media(max-width:@screen-xs-max-width){
+		margin-top:51px;
+	}
+}
+
 
 /* Logo */
 
 .topper img.tllogo {
 	width: 120px;
 	margin-top: 7px;
+}
+
+.topper,.logoresponsive {
+	position:fixed!important;
+	z-index: 100;
+	width: 100%;
+	top: 0;
 }
 
 .logoresponsive {
@@ -131,3 +144,7 @@
 		}
 	}
 }
+
+a.btn.btn-login {
+	display:none!important;
+}	

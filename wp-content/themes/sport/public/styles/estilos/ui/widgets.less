@@ -1,0 +1,36 @@
+
+
+.widget_tli-latestnews {
+	.linksumh {
+		display:inline-block!important;
+		border-bottom: 1px dotted lightgray;
+		margin: 0;
+		padding-bottom: 8px;
+		&:hover {
+			border-bottom:1px dotted darken(lightgray,10%);
+		}
+		a {
+			display: inline-block;
+			width: 100%;
+			max-height: 127px;
+			overflow: hidden;
+			.opacity(.9);
+			&:hover {
+				.opacity(1);
+			}
+		}
+		 img {
+			max-width: none;
+			width: 100%;
+			height: auto;
+			margin-top: -8px;
+			top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.widget_tli-latestnews .singlep {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}

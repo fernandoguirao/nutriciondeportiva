@@ -65,12 +65,11 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 					<a href="<?php echo home_url( '/' ) ?>" class="whites" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						© Servicio de Nutrición Deportiva UMH, 2014 
 					</a>
-					<!--
-<a href=""> | </a>
-					<a href="">
+					<a href=""> | </a>
+					<a href="<?php echo home_url( '/' ) ?>/politicadeprivacidad.pdf">
 						Política de privacidad
 					</a>
--->
+
 				</div>
 			</div>
 

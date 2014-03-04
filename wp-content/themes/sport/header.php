@@ -46,6 +46,8 @@ wp_head();
 <script type="text/javascript" src="//use.typekit.net/mms7zhr.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/public/styles/scripts.js"></script>
+
 </head>
 
 
@@ -118,7 +120,7 @@ wp_head();
 	<div id="banner-brand" class="img" style="background-image:url('<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/cienciaydeporte.png');">
 		<div id="top-banner">
 			<div id="marcas" class="row">
-				<a href="" class="float-left">
+				<a href="" class="float-left entrada">
 					<img src="<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/centro.png" alt="">
 				</a>
 				<a href="" class="float-right">

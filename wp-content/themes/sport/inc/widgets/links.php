@@ -45,7 +45,7 @@ class tli_latestnews extends WP_Widget {
 
 
 		$theimg = get_the_post_thumbnail($post->ID,'thumbnail');
-		$enlace = get_the_category($post->ID);
+
 		echo '<div class="singlep">';
 
 
@@ -55,12 +55,11 @@ class tli_latestnews extends WP_Widget {
 			echo '</a>';
 		}
 
-		if ($enlace[0]->cat_name === 'Enlaces') {
-			echo '<h6 class="cro_accent linksumh">' . get_the_content($post->ID) .'</a></h6>';
-		} else {
-			echo '<h6 class="cro_accent"><a href="' .  get_permalink($post->ID) .  '">' .   $post->post_title   .  '</a></h6>';
-			echo '<p>' . cro_excerpt(8) . '</p>';
-		}
+
+		echo '<h6 class="cro_accent"><a href="' .  get_permalink($post->ID) .  '">' .   $post->post_title   .  '</a></h6>';
+		echo '<p>' . cro_excerpt(8) . '</p>';
+
+
 
 		echo '<div class="clearfix"></div></div>';
 
