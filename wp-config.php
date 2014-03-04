@@ -22,7 +22,7 @@ define('DB_NAME', 'ndeportiva');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'N1tr0g3n0');
+define('DB_PASSWORD', 'aildeg');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
