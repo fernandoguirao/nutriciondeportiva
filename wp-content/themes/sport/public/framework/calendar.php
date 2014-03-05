@@ -25,7 +25,7 @@ function create_upcomming_events($eventarray, $num) {
 
 		$op .= '<div class="cro_eventinfoholder"><div class="cro_caldayholder"><span class="month">' . date_i18n( 'M' , $crov['date'] , false )  . '</span><span class="day">' .  date('d', $crov['date'])  . '</span></div>';
 
-		$op .= '<a href="' .  get_permalink($crov['id'])  . '">' .  get_the_title($crov['id'])  . '</a><span class="cro_thetime">' .   __('Time:','localize')    . '</span> ' . date_i18n( get_option('time_format') , $crov['date'] , false )  . '<div class="clearfix"></div></div>';
+		$op .= '<!-- <a href="' .  get_permalink($crov['id'])  . '">--><p class="widgetazul">' .  get_the_title($crov['id'])  . '<!-- </a>--></p><span class="cro_thetime">' .   __('Time:','localize')    . '</span> ' . date_i18n( get_option('time_format') , $crov['date'] , false )  . '<div class="clearfix"></div></div>';
 
 		$op .= '</div>';
 	}

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sport v1.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-02 11:34:27+0000\n"
+"PO-Revision-Date: 2014-03-05 16:54:56+0000\n"
 "Last-Translator: root <fernando@bueninvento.es>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -475,12 +475,12 @@ msgstr ""
 #: inc/framework/header.php:254
 #@ localize
 msgid "Search results for"
-msgstr ""
+msgstr "Resultados para la búsqueda"
 
 #: inc/framework/header.php:259
 #@ localize
 msgid "Not Found"
-msgstr ""
+msgstr "No encontramos"
 
 #: inc/meta-boxes/cpt-builder.php:101
 #: inc/meta-boxes/cpt-tax.php:44
@@ -2765,7 +2765,7 @@ msgstr ""
 #: public/framework/images.php:93
 #@ localize
 msgid "Search Results for \""
-msgstr ""
+msgstr "Resultados de la busqueda \""
 
 #: public/framework/images.php:95
 #@ localize
