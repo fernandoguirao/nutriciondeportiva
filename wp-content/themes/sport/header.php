@@ -116,11 +116,11 @@ wp_head();
 			<div class="row">
 		</div>
 	</div>
-	<?php if( is_home() || is_front_page() || is_page('Noticias') ) { ?>
+	<?php if( is_front_page() || is_page('Noticias') ) { ?>
 	<div id="banner-brand" class="img" style="background-image:url('<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/cienciaydeporte.png');">
 		<div id="top-banner">
 			<div id="marcas" class="row">
-				<a href="" class="float-left entrada">
+				<a href="" class="float-left">
 					<img src="<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/centro.png" alt="">
 				</a>
 				<a href="" class="float-right">
@@ -167,6 +167,14 @@ wp_head();
 					</h4>
 				</a>
 			</div>
+		</div>
+	</div>
+	<?php } else if (is_home()) { ?>
+	<div id="banner-brand" class="img" style="background-image:url('<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/cienciaydeporte.png');">
+		<div id="top-banner" class="noticias-blog">
+			<h2>
+				Noticias
+			</h2>
 		</div>
 	</div>
 	<?php } ?>
