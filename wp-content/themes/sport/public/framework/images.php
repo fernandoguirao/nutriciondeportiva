@@ -54,6 +54,10 @@ function cro_headerimg($id, $type){
 
 	if ($headimg) {$defimg = $headimg;}
 
+	if (!is_front_page()) {
+		$headimg = '';
+		$defimg = '';
+	}
 	if ($type =='page' ) {
 		$args = array(
 				'post_parent' 		=> $id,
