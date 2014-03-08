@@ -64,7 +64,13 @@ wp_head();
 	<div class="logoresponsive">
 		<?php 
 			if(isset($tlset['logo']) && $tlset['logo'])  {
-				echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo ' .  $bgimg . '" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" alt="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" /></a>';
+				echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink';
+				if (is_front_page()){
+					echo ' logo-home no-activado';
+				} else {
+					echo ' logo-resto';
+				}
+				echo '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo ' .  $bgimg . '" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" alt="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" /></a>';
 			} else {
 				echo '&nbsp;';
 			}
@@ -75,14 +81,14 @@ wp_head();
 						</span>
 						<div id="dropdown-1" class="dropdown dropdown-tip">
 						    <ul class="dropdown-menu">
-						        <li><a href="/quienes-somos">Quiénes somos</a></li>
-						        <li><a href="/enlaces">Enlaces</a></li>
-						        <li><a href="/contact">Contacto</a></li>
+						        <li><a href="<?php echo site_url(); ?>/quienes-somos">Quiénes somos</a></li>
+						        <li><a href="<?php echo site_url(); ?>/enlaces">Enlaces</a></li>
+						        <li><a href="<?php echo site_url(); ?>/contact">Contacto</a></li>
 						        <li class="dropdown-divider"></li>
-						        <li><a href="/servicios">Servicios</a></li>
-						        <li><a href="/nutricion-y-salud">Nutrición y salud</a></li>
-						        <li><a href="/nutricion-y-deporte">Nutrición y deporte</a></li>
-						        <li><a href="/news">Noticias</a></li>
+						        <li><a href="<?php echo site_url(); ?>/servicios">Servicios</a></li>
+						        <li><a href="<?php echo site_url(); ?>/nutricion-y-salud">Nutrición y salud</a></li>
+						        <li><a href="<?php echo site_url(); ?>/nutricion-y-deporte">Nutrición y deporte</a></li>
+						        <li><a href="<?php echo site_url(); ?>/news">Noticias</a></li>
 						    </ul>
 						</div>
 					</div>
@@ -94,7 +100,13 @@ wp_head();
 					<div class="logorow">
 						<?php 
 						if(isset($tlset['logo']) && $tlset['logo'])  {
-							echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo ' .  $bgimg . '" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" alt="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" /></a>';
+							echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink';
+				if (is_front_page()){
+					echo ' logo-home no-activado';
+				} else {
+					echo ' logo-resto';
+				}
+				echo '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo ' .  $bgimg . '" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" alt="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" /></a>';
 						} else {
 							echo '&nbsp;';
 						}
@@ -137,7 +149,7 @@ wp_head();
 		</div>
 		<div id="bottom-banner">
 			<div class="row">
-				<a class="cuatro column" href="/servicios">
+				<a class="cuatro column" href="<?php echo site_url(); ?>/servicios">
 					<div class="icono iuno">
 					</div>
 					<h4>
@@ -145,21 +157,21 @@ wp_head();
 					</h4>
 					<!-- <img class="fondo" src="http://localhost:8888/wp-content/uploads/2013/08/buildm2-400x270.jpg" alt=""> -->
 				</a>
-				<a class="cuatro column" href="/nutricion-y-salud">
+				<a class="cuatro column" href="<?php echo site_url(); ?>/nutricion-y-salud">
 					<div class="icono idos">
 					</div>
 					<h4>
 						Nutrición<span> y salud</span>
 					</h4>
 				</a>
-				<a class="cuatro column" href="/nutricion-y-deporte">
+				<a class="cuatro column" href="<?php echo site_url(); ?>/nutricion-y-deporte">
 					<div class="icono itres">
 					</div>
 					<h4>
 						Nutrición<span> y deporte</span>
 					</h4>
 				</a>
-				<a class="cuatro column" href="/news">
+				<a class="cuatro column" href="<?php echo site_url(); ?>/news">
 					<div class="icono icuatro">
 					</div>
 					<h4>

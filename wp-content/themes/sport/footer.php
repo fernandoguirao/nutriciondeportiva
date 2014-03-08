@@ -32,7 +32,11 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 				&nbsp;
 				<?php if ( is_active_sidebar( 'cro_footleft' ) ) { 
 					echo '<ul class="footwidget">';
-					dynamic_sidebar( 'cro_footleft' );
+					?><li id="text-4" class="widget-container widget_text clear">
+						<div class="textwidget">
+							<img class="tllogo cro_logonobg" title="Nutrición deportiva" src="<?php echo site_url(); ?>/wp-content/uploads/2013/12/logo-small-e1386930722867.png" alt="Nutrición deportiva">
+						</div>
+					</li><?php
 					echo '</ul>';
 				} ?>					
 			</div>
@@ -83,5 +87,24 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 <?php do_action('croma_sch'); ?>
 <?php do_action('croma_footstuff'); ?>
 <?php wp_footer(); ?>
+<script>
+	if ($j('.logo-home').length > 0){
+	$j(window).scroll(function () {
+		if ($j('.logo-home').hasClass('no-activado')){
+	    if ($j(window).scrollTop()  > 240) {
+	        $j('.logo-home').removeClass('no-activado');
+	        $j('.logo-home').addClass('activado');
+	    }
+	  }
+	  if ($j('.logo-home').hasClass('activado')){
+	    if ($j(window).scrollTop()  < 240) {
+	        $j('.logo-home').removeClass('activado');
+	        $j('.logo-home').addClass('no-activado');
+	    }
+		}
+});
+}
+
+</script>
 </body>
 </html>
