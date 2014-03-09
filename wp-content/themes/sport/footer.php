@@ -87,24 +87,23 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 <?php do_action('croma_sch'); ?>
 <?php do_action('croma_footstuff'); ?>
 <?php wp_footer(); ?>
-<script>
-	if ($j('.logo-home').length > 0){
-	$j(window).scroll(function () {
-		if ($j('.logo-home').hasClass('no-activado')){
-	    if ($j(window).scrollTop()  > 240) {
-	        $j('.logo-home').removeClass('no-activado');
-	        $j('.logo-home').addClass('activado');
-	    }
-	  }
-	  if ($j('.logo-home').hasClass('activado')){
-	    if ($j(window).scrollTop()  < 240) {
-	        $j('.logo-home').removeClass('activado');
-	        $j('.logo-home').addClass('no-activado');
-	    }
+	<script>
+		if ($j('.logo-home').length > 0){
+			$j(window).scroll(function () {
+				if ($j('.logo-home').hasClass('no-activado')){
+					if ($j(window).scrollTop()  > 240) {
+						$j('.logo-home').removeClass('no-activado');
+						$j('.logo-home').addClass('activado');
+					}
+				 }
+				if ($j('.logo-home').hasClass('activado')){
+					if ($j(window).scrollTop()  < 240) {
+						$j('.logo-home').removeClass('activado');
+						$j('.logo-home').addClass('no-activado');
+					}
+				}
+			});
 		}
-});
-}
-
-</script>
+	</script>
 </body>
 </html>

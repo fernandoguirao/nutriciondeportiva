@@ -54,7 +54,7 @@ wp_head();
 
 <?php 
 	if ($ap != '') { ?>
-		<body <?php body_class(); ?> onload="initialize()">
+		<body <?php body_class(); ?> <?php // onload="initialize()" ?>>
 	<?php } else { ?>
 		<body <?php body_class(); ?>>
 	<?php } 
