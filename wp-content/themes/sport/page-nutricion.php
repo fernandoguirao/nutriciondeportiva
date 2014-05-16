@@ -30,10 +30,12 @@ get_header();
 					<ul class="cro_col_4 activitylist">
 					<?php
 						// check if the flexible content field has rows of data
-						if( have_rows('cada_servicio') ):
+						if( have_rows('cada_servicio') || have_rows('pagina_individual') ):
 
 							// loop through the rows of data
 							while ( have_rows('cada_servicio') ) : the_row();
+
+								if( get_row_layout() == 'cada_servicio' ):
 					?>
 						<li class="cro_activityli clearfix">
 							<div class="imgouter imgactivityshort">
@@ -58,6 +60,31 @@ get_header();
 						</li>
 
 								<?php
+									else:
+									?>
+						<li class="cro_activityli clearfix">
+							<div class="imgouter imgactivityshort">
+								<?php $enlace = get_sub_field('enlace'); ?>
+								<a href="<?php echo $enlace; ?>" class="teama">
+									<img width="400" height="400" src="<?php the_sub_field('imagen');?>" class="attachment-team wp-post-image" alt="event6">
+								</a>
+								<h5 class="cro_accent cro_galtitle">
+									<?php the_sub_field('titulo');?>
+								</h5>
+								<p class="cro_activitydesc">
+									<?php the_sub_field('descripcion');?>
+								</p>
+								<div class="clarlabel">
+									<!-- <a href="<?php the_sub_field('url_subpagina');?>"> -->
+									
+									<a href="<?php echo $enlace; ?>"> 
+										Más información
+									</a>
+								</div>
+							</div>
+						</li>
+								<?
+									endif;
 
 								endwhile;
 
