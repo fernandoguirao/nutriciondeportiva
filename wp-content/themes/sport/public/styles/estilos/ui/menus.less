@@ -148,3 +148,50 @@
 a.btn.btn-login {
 	display:none!important;
 }	
+
+#searcher {
+	cursor:pointer;
+}
+
+.iconSearch {
+	height: 16px;
+	margin: 11px 11px;
+}
+.topper {
+	#access {
+		// margin-top:-28px;
+		div:nth-child(2){
+			float: right;
+			position: absolute;
+			top: 0;
+			margin-left: -29px;
+			opacity: 0;
+			.transition(all, .25s);
+			z-index:-1;
+			&.non-hidden {
+				opacity: 1;
+				top: 45px;
+				z-index:8;
+			}
+			input[type="submit"]{
+				border: none;
+				height: 42px!important;
+				color: white;
+			}
+			/*input[type="text"] {
+				position: absolute;
+				z-index: 2;
+				margin-left: -193px;
+			}
+			input[type="submit"]{
+				border: none;
+				height: 38px!important;
+				.border-radius(4px)!important;
+				color:white;
+				&:hover {
+					.border-radius(100px)!important;
+				}
+			}*/
+		}
+	}
+}

@@ -105,6 +105,14 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 });
 }
 
+// var showSearch = function() {
+//   $j('.topper #access div:nth-child(2)').addClass('hidden');
+// }
+
+// $j('.showSearch').click(function(){
+// 	$j('.topper #access div:nth-child(2)').addClass('hidden');
+// });
+
 </script>
 </body>
 </html>
