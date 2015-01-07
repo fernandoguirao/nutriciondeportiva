@@ -51,7 +51,7 @@ function ntfetch_social() {
 			$op .= ($tlset[$tl['class']]) ? '<li id="' . $tl['class'] . '" ><em>' . $tl['name'] . '</em><a href="' . $tlset[$tl['class']] . '" target=_blank"><span>' . $tl['name']  . '</span></a></li>' : '' ;
 		}
 	}	
-	$op .= '<li id="searcher" class="showSearch" onClick="$j(this).parent().prev().toggleClass(\'non-hidden\');"><img src="http://localhost:8888/wp-content/themes/sport/public/styles/images/search.png" class="iconSearch"></li></ul>';	
+	$op .= '<li id="searcher" class="showSearch" onClick="$j(this).parent().prev().toggleClass(\'non-hidden\');"><img src="'. site_url() .'/wp-content/themes/sport/public/styles/images/search.png" class="iconSearch"></li></ul>';	
 	return $op;
 }
 

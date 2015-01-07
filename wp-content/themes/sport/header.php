@@ -133,7 +133,7 @@ wp_head();
 		<div id="top-banner">
 			<div id="marcas" class="row">
 				<a href="" class="float-left">
-					<img src="<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/centro.png" alt="">
+					<img src="<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/centro2.png" alt="">
 				</a>
 				<a href="" class="float-right">
 					<img src="<?php echo get_bloginfo('template_url')?>/public/styles/estilos/images/umh.png" alt="">
